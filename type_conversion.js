@@ -17,3 +17,8 @@ console.log(typeof isLoggedIn1)
 // 0 => false
 // "" => false
 // "abc" => true
+
+x = 4
+y = x++
+z = ++x
+console.log(x, y, z)
