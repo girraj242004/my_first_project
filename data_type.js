@@ -4,3 +4,4 @@ let is_follow = true; // boolean
 // bigInt
 // symbol=> unique
 // object => key value pair
+//
