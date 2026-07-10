@@ -18,4 +18,4 @@ let myDate = Date();
 let myTimeStamp = new Date ();
 // console.log(myTimeStamp);
 // console.log(Math.floor(myTimeStamp/1000)) // convert to seconds
-console.log(`${(myTimeStamp.getDate() )} ${(myTimeStamp.getMonth() + 1)} ${(myTimeStamp.getYear() )}` )
+console.log(`${(myTimeStamp.getDate() + 1 )} ${(myTimeStamp.getMonth() + 1)} ${(myTimeStamp.getFullYear() )}` )
