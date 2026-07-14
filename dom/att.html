@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributest</title>
+</head>
+<body>
+    <div id="box" name="div">this is my div</div>
+    <p class="paragraph">this is a simple line</p>
+    <script>
+
+        // to get value
+        const div = document.querySelector('div')
+        const id = div.getAttribute("id")
+        console.log(id)
+
+        const p = document.querySelector('p')
+        const cls = p.getAttribute('class')
+        console.log(cls) 
+
+        // to set value
+
+        p.setAttribute("class", "para")
+        console.log(p)
+    </script>
+</body>
+</html>

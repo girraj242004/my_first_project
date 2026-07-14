@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert and remvove element</title>
+    <style>
+        div{
+        height: 100px;
+        width : 100px;
+        background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>Hello</div>
+    <script>
+        let button = document.createElement('button')
+        button.innerText = 'click me'
+        button.style.backgroundColor = 'red'
+        button.style.color = 'white'
+        button.style.textAlign= 'center'
+        button.style.marginLeft = '17px'
+        
+        let div = document.querySelector('div')
+        div.before(button);
+    </script>
+</body>
+</html>
