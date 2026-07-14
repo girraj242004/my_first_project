@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle button</title>
+</head>
+<body>
+    <button id="mode">
+        click me  !
+    </button>
+    <script>
+        let btn = document.querySelector('#mode')
+        let mode = "light"
+        btn.addEventListener('click', () => {
+            if(mode === "light"){
+                mode = "dark"
+                console.log("dark")
+                document.querySelector('body').style.backgroundColor = "black";
+            }
+            else{
+                mode = "light"
+                console.log("white")
+                document.querySelector('body').style.backgroundColor = "white";
+            }
+        })
+    </script>
+</body>
+</html>
