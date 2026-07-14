@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratise</title>
+</head>
+<style>
+    div{
+        width : 100px;
+        height : 100px;
+        border : 1px solid black;
+        margin : 5px;
+        background-color: aquamarine;
+        text-align : center;
+    }
+</style>
+<body>
+    <div class="box">one box</div>
+        <div class="box">two box</div>
+        <div class="box">three box</div>
+    <script>
+        let divs = document.querySelectorAll('div')
+        console.log(divs)
+        let index =  1;
+        for(div of divs){
+            div.innerText= `new uniques value ${index}`
+            index++;
+        }
+    </script>
+</body>
+</html>

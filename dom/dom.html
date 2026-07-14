@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basic</title>
+    <style>
+        body{
+            background-color: #212121;
+            color : white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="head">heading one</h1>
+        <h1 class="heading">heading two</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+        const a = document.getElementById('head')
+        // console.log(a)
+        const b = document.getElementsByClassName('heading')
+        // console.log(b)
+        const p = document.getElementsByTagName('p')
+        // console.log(p)
+
+        const c = document.querySelector("p")
+        console.log(c)
+        console.log(c.tagName)
+        console.log(c.innerText)
+        console.log(c.innerHTML)
+        console.log(c.textContent)
+
+
+    </script>
+</body>
+</html>
